@@ -6,12 +6,12 @@ This project demonstrates an end-to-end machine learning pipeline to *predict th
 
 ## 📌 Highlights
 
-- 📊 Dataset: Kaggle - Diabetes Early Disease Prediction
-- ⚙️ Algorithms Used: Decision Tree, Random Forest, K-Nearest Neighbors, XGBoost, AdaBoost, Logistic Regression
-- 🎯 Best Performing Model: *XGBoost (Accuracy: 91.48%)*
-- 🧪 Evaluation Metrics: Accuracy, Recall, Confusion Matrix, ROC Curve, AUC Score
-- 🛠 Tools & Libraries: pandas, scikit-learn, xgboost, seaborn, matplotlib, joblib
-- 🌐 Deployment: Model saved as XGBoost.pkl for future web integration (e.g., Gradio)
+- 📊 **Dataset:** Kaggle - Diabetes Early Disease Prediction
+- ⚙️ **Algorithms Used:** Decision Tree, Random Forest, K-Nearest Neighbors, XGBoost, AdaBoost, Logistic Regression
+- 🎯 **Best Performing Model:** XGBoost (Accuracy: 91.48%)
+- 🧪 **Evaluation Metrics:** Accuracy, Recall, Confusion Matrix, ROC Curve, AUC Score
+- 🛠 **Tools & Libraries:** pandas, scikit-learn, xgboost, seaborn, matplotlib, joblib
+- 🌐 **Deployment:** Model saved as XGBoost.pkl for future web integration (e.g., Gradio)
 
 ---
 
@@ -28,21 +28,21 @@ The dataset contains clinical and demographic information of patients including:
 
 ## 🧪 Methodology
 
-1. *Data Preprocessing*
+1. <i>**Data Preprocessing**</i>
    - Handling missing values
    - Removing duplicates
    - Label encoding categorical features
    - Resampling (RandomUnderSampler)
 
-2. *Exploratory Data Analysis*
+2. <i>**Exploratory Data Analysis**</i>
    - Distribution plots
    - Feature correlation heatmaps
    - Count plots by class distribution
 
-3. *Feature Selection*
+3. <i>**Feature Selection**</i>
    - Feature importance via RandomForest
 
-4. *Model Training*
+4. <i>**Model Training**</i>
    - Hyperparameter tuning with GridSearchCV
    - Models:
      - Decision Tree Classifier
@@ -52,12 +52,12 @@ The dataset contains clinical and demographic information of patients including:
      - AdaBoost Classifier
      - Logistic Regression
 
-5. *Model Evaluation*
+5. <i>**Model Evaluation**</i>
    - Accuracy & Recall scores
    - Confusion matrices
    - ROC-AUC curves for both training and testing data
 
-6. *Model Comparison*
+6. <i>**Model Comparison**</i>
    - Accuracy scores for all models visualized
    - XGBoost selected as the best model (Accuracy: *91.48%*)
 
@@ -81,3 +81,14 @@ The dataset contains clinical and demographic information of patients including:
 - The final *XGBoost model* is exported using joblib for deployment:
   ```python
   joblib.dump(model, 'XGBoost.pkl')
+
+---
+
+## 🧠 Tech Stack
+
+- Python
+- pandas, numpy, matplotlib, seaborn
+- scikit-learn
+- xgboost
+- imbalanced-learn
+- joblib
